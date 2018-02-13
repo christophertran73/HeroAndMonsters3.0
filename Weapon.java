@@ -22,7 +22,7 @@ public class Weapon extends Item{
             attack = (int)(Math.random()*11)+45;
             setPrice(3);
         }else{
-            attack = (int)(Math.random()*11);
+            attack = (int)((Math.random()*11)+3);
             setPrice(0);
         }
     }
@@ -31,6 +31,9 @@ public class Weapon extends Item{
         return attack;
     }
 }
+
+
+
 
 
 

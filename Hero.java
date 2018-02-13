@@ -27,7 +27,7 @@ public class Hero{
     public Hero(){
         xpos = 0;
         ypos = 14;
-        health = 100;
+        health = 200;
         sword = new Weapon("dagger");
         killedB = 0;
         hides = 0;
@@ -42,7 +42,7 @@ public class Hero{
     public Hero(int x, int y){
         xpos = x;
         ypos = y;
-        health = 100;
+        health = 200;
         sword = new Weapon("dagger");
         killedB = 0;
         hides = 0;
@@ -196,6 +196,9 @@ public class Hero{
     
     //when we add a display screen, we should add the # of hides we have on here
 }
+
+
+
 
 
 

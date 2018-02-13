@@ -70,7 +70,7 @@ public class Monster extends Enemy{
                     System.out.println("Which type of potion would you like to use: (H) half potion of (F) full potion or (N) none?");
                     String pot = reads.next();
                     int numNonP = 0;
-                    while(!(option.equals("f") || pot.equals("h") || pot.equals("n"))){
+                    while(!(pot.equals("f") || pot.equals("h") || pot.equals("n"))){
                         System.out.print("\nOnly enter the keys h,f, or n");
                         System.out.println("\nWhat do you want to use?\n");
                         pot = reads.next();
@@ -134,6 +134,9 @@ public class Monster extends Enemy{
                                     flee(h);
                                 } else if(getSpeed() == 3 && Math.random() > 0.25){
                                     flee(h);
+                                } else{
+                                    System.out.println("Hero cannot flee. He must fight the monster.");
+                                    fight(h);
                                 }
                             }else{
                                 if(getSpeed() == 1 && Math.random() > 0.10){
@@ -142,6 +145,9 @@ public class Monster extends Enemy{
                                     flee(h);
                                 } else if(getSpeed() == 3 && Math.random() > 0.50){
                                     flee(h);
+                                } else{
+                                    System.out.println("Hero cannot flee. He must fight the monster.");
+                                    fight(h);
                                 }
                             }
 
@@ -171,6 +177,9 @@ public class Monster extends Enemy{
                                     flee(h);
                                 } else if(getSpeed() == 3 && Math.random() > 0.25){
                                     flee(h);
+                                } else{
+                                    System.out.println("Hero cannot flee. He must fight the monster.");
+                                    fight(h);
                                 }
                             }else{
                                 if(getSpeed() == 1 && Math.random() > 0.10){
@@ -179,6 +188,9 @@ public class Monster extends Enemy{
                                     flee(h);
                                 } else if(getSpeed() == 3 && Math.random() > 0.50){
                                     flee(h);
+                                } else{
+                                    System.out.println("Hero cannot flee. He must fight the monster.");
+                                    fight(h);
                                 }
                             }
                         }
@@ -207,6 +219,9 @@ public class Monster extends Enemy{
                                     flee(h);
                                 } else if(getSpeed() == 3 && Math.random() > 0.25){
                                     flee(h);
+                                } else{
+                                    System.out.println("Hero cannot flee. He must fight the monster.");
+                                    fight(h);
                                 }
                             }else{
                                 if(getSpeed() == 1 && Math.random() > 0.10){
@@ -215,6 +230,9 @@ public class Monster extends Enemy{
                                     flee(h);
                                 } else if(getSpeed() == 3 && Math.random() > 0.50){
                                     flee(h);
+                                } else{
+                                    System.out.println("Hero cannot flee. He must fight the monster.");
+                                    fight(h);
                                 }
                             }
                         }
@@ -243,6 +261,9 @@ public class Monster extends Enemy{
                                     flee(h);
                                 } else if(getSpeed() == 3 && Math.random() > 0.25){
                                     flee(h);
+                                } else{
+                                    System.out.println("Hero cannot flee. He must fight the monster.");
+                                    fight(h);
                                 }
                             }else{
                                 if(getSpeed() == 1 && Math.random() > 0.10){
@@ -251,6 +272,9 @@ public class Monster extends Enemy{
                                     flee(h);
                                 } else if(getSpeed() == 3 && Math.random() > 0.50){
                                     flee(h);
+                                } else{
+                                    System.out.println("Hero cannot flee. He must fight the monster.");
+                                    fight(h);
                                 }
                             }
                         }
@@ -373,4 +397,7 @@ public class Monster extends Enemy{
         return ("Monster Health: " + getHealth() + ",\nMonster Strength: " + getStrength() + ",\nMonster Speed: " + getSpeed() + "\nMonster Direction: " + direction);
     }
 }
+
+
+
 

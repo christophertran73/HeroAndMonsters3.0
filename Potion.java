@@ -29,9 +29,9 @@ public class Potion extends Item{
     
     public void setHeal(String t){
         if ( t.equals("full") || t.equals("phoenix") ){
-            heal = 100;
+            heal = 200;
         }else{
-            heal = 50;
+            heal = 100;
         }
     }
     
@@ -51,5 +51,8 @@ public class Potion extends Item{
         used = true;
     }
 }
+
+
+
 
 

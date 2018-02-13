@@ -115,13 +115,13 @@ public class Farmer{
             System.out.println("I have potions, bombs, breastplate, a satchel, and leather sandals.(Y/N)");
             String choice = kbReader.next();
             if(numItems <= maxItems){
-                if ( choice.equals("Y") ){
+                if ( choice.equals("y") || choice.equals("Y") ){
                     System.out.println("What would you like?: (P:Potions, BO:Bombs, BR:Breastplate, S:Satchel, L:Leather Sandals)");
                     String item = kbReader.next();
-                    if(item.equals("P")){
+                    if(item.equals("p")){
                         System.out.println("Which potion would you like?: (H: 1/2 Potion, F: Full Potion, P: Revival)");
                         String wPot = kbReader.next();
-                        if(wPot.equals("H")){
+                        if(wPot.equals("h") || wPot.equals("H")){
                             if(h.getHides()>=1){
                                 System.out.println("*Purchase Successful*");
                                 h.setHides(h.getHides()-1);
@@ -132,7 +132,7 @@ public class Farmer{
                                 System.out.println("*Purchase Unsuccessful*");
                                 System.out.println("Farmer: Come back when you have one hide.");
                             }
-                        }else if(wPot.equals("F")){
+                        }else if(wPot.equals("f") || wPot.equals("F")){
                             if(h.getHides()>=2){
                                 System.out.println("*Purchase Successful*");
                                 h.setHides(h.getHides()-2);
@@ -143,7 +143,7 @@ public class Farmer{
                                 System.out.println("*Purchase Unsuccessful*");
                                 System.out.println("Farmer: Come back when you have two hides.");
                             }
-                        }else if(wPot.equals("P")){
+                        }else if(wPot.equals("p") || item.equals("P")){
                             if(h.getHides()>=3){
                                 System.out.println("*Purchase Successful*");
                                 h.setHides(h.getHides()-3);
@@ -155,7 +155,7 @@ public class Farmer{
                                 System.out.println("Farmer: Come back when you have three hides.");
                             }
                         }
-                    }else if(item.equals("BO")){
+                    }else if(item.equals("bo") || item.equals("BO")){
                         if(h.getHides()>=3){
                             System.out.println("*Purchase Successful*");
                             h.setHides(h.getHides()-3);
@@ -166,7 +166,7 @@ public class Farmer{
                             System.out.println("*Purchase Unsuccessful*");
                             System.out.println("Farmer: Come back when you have three hides.");
                         }
-                    }else if(item.equals("BR")){
+                    }else if(item.equals("BR") || item.equals("BR")){
                         if(h.getHides()>=2){
                             System.out.println("*Purchase Successful*");
                             h.setHides(h.getHides()-3);
@@ -177,7 +177,7 @@ public class Farmer{
                             System.out.println("*Purchase Unsuccessful*");
                             System.out.println("Farmer: Come back when you have three hides.");
                         }
-                    }else if(item.equals("S")){
+                    }else if(item.equals("s") || item.equals("S")){
                         if(h.getHides()>=3){
                             System.out.println("*Purchase Successful*");
                             h.setHides(h.getHides()-3);
@@ -188,7 +188,7 @@ public class Farmer{
                             System.out.println("*Purchase Unsuccessful*");
                             System.out.println("Farmer: Come back when you have three hides.");
                         }
-                    }else if(item.equals("L")){
+                    }else if(item.equals("l") || item.equals("L")){
                         if(h.getHides()>=3){
                             System.out.println("*Purchase Successful*");
                             h.setHides(h.getHides()-3);
@@ -207,6 +207,9 @@ public class Farmer{
         }
     }
 }
+
+
+
 
 
 

@@ -15,7 +15,8 @@ public class Boss extends Enemy{
 
     public void interact(Hero h){
         //checks if hero has proper items
-        if(name.equals("sphinx")){
+        if(name.equals("Sphinx")){
+            System.out.println("Hero has run into the Sphinx.");
             for(Armor obj: h.getArmors()){
                 if(obj.equals("satchel")){
                     heroHasItems = true;
@@ -23,19 +24,22 @@ public class Boss extends Enemy{
                     System.out.println("Come back when you have a satchel.");
                 }
             }
-        }else if(name.equals("chimera")){
+        }else if(name.equals("Chimera")){
+            System.out.println("Hero has run into the Chimera.");
             if ( h.getWeapon().equals("short sword") ){
                 heroHasItems = true;
             }else{
                 System.out.println("Come back when you have a short sword.");
             }
-        }else if(name.equals("dragon")){
+        }else if(name.equals("Dragon")){
+            System.out.println("Hero has run into the Dragon.");
             if ( h.getWeapon().equals("long sword") ){
                 heroHasItems = true;
             }else{
                 System.out.println("Come back when you have a long sword.");
             }
-        }else if(name.equals("finalBoss")){
+        }else if(name.equals("Final Boss")){
+            System.out.println("Hero has run into the Final Boss.");
             for(Armor obj: h.getArmors()){
                 if(obj.equals("breastplate")&&h.getLS()==true&&h.getWeapon().equals("axe")){
                     int counter = 0;
@@ -47,10 +51,10 @@ public class Boss extends Enemy{
                     if (counter>= 3){
                         heroHasItems = true;
                     }else{
-                        System.out.println("Come back when you have a satchel.");
+                        System.out.println("Come back when you have a breastplate, leather sandals, an axe, and three phoenix potions..");
                     }
                 }else{
-                    System.out.println("Come back when you have a satchel.");
+                    System.out.println("Come back when you have a breastplate, leather sandals, an axe, and three phoenix potions.");
                 }
             }
         }
@@ -256,6 +260,10 @@ public class Boss extends Enemy{
         return (name + " Health: " + getHealth() + ",\n" + name + " Strength: " + getStrength() + ",\n" + name + " Speed: " + getSpeed());
     }
 }
+
+
+
+
 
 
 

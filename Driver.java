@@ -203,7 +203,7 @@ public class Driver{
         //ArrayList<Monster> monsters = new ArrayList<Monster>();
         Monster m;
         int num = (int)(Math.random()*4);
-        if(Math.random() < 0.2){
+        if(Math.random() < 0.15){
             //System.out.println("(" + h.getY() + ", " + h.getX() + ")");
             //monster on top of hero
             if(num == 0 && h.getY() - 1 >= 0 && map[h.getY() - 1][h.getX()] == null){
@@ -300,25 +300,28 @@ public class Driver{
         }
         //prints map
         printMap(map, printedMap, worldSize, h);
-        interact(monsters, farmers, h, bosS);
+        interact(monsters, farmers, h, bosses, bosS);
     }
 
-    public static void interact(ArrayList<Monster> mo, ArrayList<Farmer> fa, Hero h, ArrayList<Boss> bosses){
+    public static void interact(ArrayList<Monster> mo, ArrayList<Farmer> fa, Hero h, ArrayList<Boss> bo, ArrayList<Boss> bosS){
         for(Farmer f: fa){
             numF++;
             if(numF==1){
                 f.setType(1);
+            }else if(numF == 6){
+                f.setType(6);
             }
-            f.interact(h, bosses);
+            f.interact(h, bosS);
+        }
+        
+        for(Boss b: bo){
+            b.interact(h);
         }
 
         for(Monster m: mo){
             m.interact(h);
         }
         
-        for(Boss b: bosses){
-            b.interact(h);
-        }
     }
 
     public boolean isMonster(int x, int y){
@@ -329,6 +332,9 @@ public class Driver{
         }
     }
 }
+
+
+
 
 
 
