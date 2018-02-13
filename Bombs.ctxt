@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Bombs
+comment1.params=
+comment1.target=Bombs()
+comment2.params=
+comment2.target=boolean\ getUsed()
+comment3.params=u
+comment3.target=void\ setUsed(boolean)
+numComments=4

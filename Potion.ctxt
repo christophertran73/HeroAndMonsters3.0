@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Potion
+comment1.params=
+comment1.target=Potion()
+comment2.params=t
+comment2.target=Potion(java.lang.String)
+comment3.params=
+comment3.target=boolean\ getUsed()
+comment4.params=u
+comment4.target=void\ setUsed(boolean)
+comment5.params=
+comment5.target=int\ getHeal()
+comment6.params=t
+comment6.target=void\ setHeal(java.lang.String)
+comment7.params=t
+comment7.target=void\ setP(java.lang.String)
+comment8.params=h
+comment8.target=void\ healHero(Hero)
+numComments=9

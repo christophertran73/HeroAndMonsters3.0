@@ -1,0 +1,36 @@
+#BlueJ class context
+comment0.target=Enemy
+comment1.params=
+comment1.target=Enemy()
+comment10.params=
+comment10.target=int\ getX()
+comment11.params=
+comment11.target=int\ getY()
+comment12.params=
+comment12.target=int\ getStrength()
+comment13.params=
+comment13.target=int\ getHealth()
+comment14.params=
+comment14.target=int\ getSpeed()
+comment15.params=
+comment15.target=boolean\ isAlive()
+comment16.params=
+comment16.target=boolean\ isInteracted()
+comment2.params=x\ y
+comment2.target=Enemy(int,\ int)
+comment3.params=x
+comment3.target=void\ setX(int)
+comment3.text=public\ Enemy(int\ x,\ int\ y,\ Hero\ h){\r\n\ \ \ \ \ \ \ \ xpos\ \=\ x;\r\n\ \ \ \ \ \ \ \ ypos\ \=\ y;\r\n\ \ \ \ \ \ \ \ health\ \=\ (int)(Math.random()\ *\ 100)\ +\ 1;\r\n\ \ \ \ \ \ \ \ strength\ \=\ h.getXP();\r\n\ \ \ \ \ \ \ \ speed\ \=\ h.getXP();\r\n\ \ \ \ \ \ \ \ alive\ \=\ true;\r\n\ \ \ \ \ \ \ \ interacted\ \=\ false;\r\n}
+comment4.params=y
+comment4.target=void\ setY(int)
+comment5.params=s
+comment5.target=void\ setStrength(int)
+comment6.params=h
+comment6.target=void\ setHealth(int)
+comment7.params=s
+comment7.target=void\ setSpeed(int)
+comment8.params=a
+comment8.target=void\ setAlive(boolean)
+comment9.params=i
+comment9.target=void\ setInteracted(boolean)
+numComments=17

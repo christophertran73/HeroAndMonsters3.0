@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Farmer
+comment1.params=
+comment1.target=Farmer()
+comment10.params=i
+comment10.target=void\ setInteracted(boolean)
+comment11.params=h\ bosses
+comment11.target=void\ interact(Hero,\ java.util.ArrayList)
+comment2.params=x\ y
+comment2.target=Farmer(int,\ int)
+comment3.params=
+comment3.target=int\ getX()
+comment4.params=
+comment4.target=int\ getY()
+comment5.params=
+comment5.target=int\ getType()
+comment6.params=
+comment6.target=boolean\ getInteracted()
+comment7.params=x
+comment7.target=void\ setX(int)
+comment8.params=y
+comment8.target=void\ setY(int)
+comment9.params=t
+comment9.target=void\ setType(int)
+numComments=12

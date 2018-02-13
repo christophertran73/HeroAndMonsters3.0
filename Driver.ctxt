@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Driver
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=map\ printedMap\ worldSize\ h
+comment2.target=void\ printMap(java.lang.Object[][],\ java.lang.String[][],\ int,\ Hero)
+comment3.params=map\ printedMap\ h\ worldSize
+comment3.target=void\ placeMonsters(java.lang.Object[][],\ java.lang.String[][],\ Hero,\ int)
+comment4.params=map\ printedMap\ h
+comment4.target=java.util.ArrayList\ touching(java.lang.Object[][],\ java.lang.String[][],\ Hero)
+comment5.params=touchedPos\ map\ printedMap\ h\ worldSize\ bosS
+comment5.target=void\ differentiate(java.util.ArrayList,\ java.lang.Object[][],\ java.lang.String[][],\ Hero,\ int,\ java.util.ArrayList)
+comment6.params=mo\ fa\ h\ bosses
+comment6.target=void\ interact(java.util.ArrayList,\ java.util.ArrayList,\ Hero,\ java.util.ArrayList)
+comment7.params=x\ y
+comment7.target=boolean\ isMonster(int,\ int)
+numComments=8
